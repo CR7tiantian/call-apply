@@ -47,12 +47,12 @@ function sub(a,b) {
 	return (a-b);
 };
 //  call方法
-alert(add.call(sub,4,2));
-alert(sub.call(add,4,2));
+alert(add.call(sub,4,2));//6
+alert(sub.call(add,4,2));//2
 
 //  apply方法
-alert(add.apply(sub,[4,2]));
-alert(sub.apply(add,[4,2]));
+alert(add.apply(sub,[4,2]));//6
+alert(sub.apply(add,[4,2]));//2
 
 //  比较多的应用,将类数组对象转换成可以应用所有数组方法的数组
 var nodes = document.getElementsByTagName("p");
